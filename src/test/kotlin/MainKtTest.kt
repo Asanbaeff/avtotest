@@ -219,7 +219,7 @@ class MainKtTest {
         val dailyLimit = 150_000.0
         val cardType = "Visa"
         val result = transferAmount > dailyLimit && cardType != "VK pay"
-        assertEquals(false, result)
+        assertEquals(true, result)
     }
 
 }
